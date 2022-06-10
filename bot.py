@@ -131,7 +131,8 @@ def help_(update: Update, context: CallbackContext):
 def start_bot():
     global sessions
     sessions = {}
-    updater = Updater(token='5237798422:AAFlobvbBvyTv6X5F5W-g8-XKmGWZs6Zet4', use_context=True)
+    tkn = 'set your telegram token!'
+    updater = Updater(token=tkn, use_context=True)
     dispatcher = updater.dispatcher
     logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
                          level=logging.INFO)
